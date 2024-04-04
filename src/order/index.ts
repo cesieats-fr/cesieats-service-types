@@ -1,5 +1,12 @@
-export interface Account {
-    id: number;
-    email: string;
-    password: string;
+export interface IOrder {
+    id: string;
+    idRestaurant: string;
+    idClient: string;
+    idDelivery?: string;
+}
+
+export interface IOrderItems {
+    id: string;
+    idOrder: string;
+    idItem: string;
 }

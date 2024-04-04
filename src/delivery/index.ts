@@ -1,5 +1,7 @@
-export interface Delivery {
-    id: number;
-    email: string;
-    password: string;
+export interface IDelivery {
+    id: string;
+    state: string;
+    idClient: string;
+    idDeliver: string;
+    idOrder: string;
 }
