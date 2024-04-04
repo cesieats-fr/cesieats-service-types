@@ -1,4 +1,4 @@
-export interface Account {
+export interface Delivery {
     id: number;
     email: string;
     password: string;
