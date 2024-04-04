@@ -3,6 +3,7 @@ export interface IOrder {
     idRestaurant: string;
     idClient: string;
     idDelivery?: string;
+    itemState: string;
 }
 
 export interface IOrderItems {
