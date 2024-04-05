@@ -7,17 +7,16 @@ pipeline {
     }
 
     stages {
-
-        stage('') {
-            steps {
-                sh 'mv ./src/* .'
-            }
-        }
-
         stage('Change version') {
             steps {
                 // Update npm version package
                 sh 'npm version 1.0.$BUILD_ID'
+            }
+        }
+
+        stage('Moved files from src to root') {
+            steps {
+                sh 'mv ./src/* .'
             }
         }
 
