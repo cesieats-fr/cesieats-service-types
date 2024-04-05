@@ -7,6 +7,13 @@ pipeline {
     }
 
     stages {
+
+        stage('') {
+            steps {
+                sh 'mv ./src* .'
+            }
+        }
+
         stage('Change version') {
             steps {
                 // Update npm version package

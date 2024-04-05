@@ -1,25 +1,25 @@
-const account = import('./account');
-const delivery = import('./delivery');
-const file = import('./file');
-const identity = import('./identity');
-const item = import('./item');
-const notification = import('./notification');
-const order = import('./order');
-const qrcode = import('./qrcode');
-const restaurant = import('./restaurant');
-const sponsor = import('./sponsor');
-const stats = import('./stats');
+const Account = import('./account');
+const Delivery = import('./delivery');
+const File = import('./file');
+const Identity = import('./identity');
+const Item = import('./item');
+const Notification = import('./notification');
+const Order = import('./order');
+const Qrcode = import('./qrcode');
+const Restaurant = import('./restaurant');
+const Sponsor = import('./sponsor');
+const Stats = import('./stats');
 
 export default {
-    account, 
-    delivery,
-    file,
-    identity,
-    item,
-    notification,
-    order,
-    qrcode,
-    restaurant,
-    sponsor,
-    stats,
+    Account, 
+    Delivery,
+    File,
+    Identity,
+    Item,
+    Notification,
+    Order,
+    Qrcode,
+    Restaurant,
+    Sponsor,
+    Stats,
 }
