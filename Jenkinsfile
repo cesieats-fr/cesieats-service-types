@@ -16,7 +16,7 @@ pipeline {
 
         stage('Moved files from src to root') {
             steps {
-                sh 'mv -f ./src/* .'
+                sh 'mv -r ./src/* .'
             }
         }
 
