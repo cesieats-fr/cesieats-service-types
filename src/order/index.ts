@@ -3,11 +3,18 @@ export interface IOrder {
     idRestaurant: string;
     idClient: string;
     idDelivery?: string;
-    itemState: string;
+    itemState: OrderState;
 }
 
 export interface IOrderItems {
     id: string;
     idOrder: string;
     idItem: string;
+}
+
+enum OrderState {
+    WaitingForApprouval,
+    Approuved,
+    WaitingForDelivery,
+    Done
 }

@@ -1,5 +1,4 @@
-export interface Account {
+export interface IQrcode {
     id: number;
-    email: string;
-    password: string;
+    
 }

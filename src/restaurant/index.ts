@@ -1,5 +1,11 @@
-export interface Account {
+export interface IRestaurant {
     id: number;
-    email: string;
-    password: string;
+    name: string;
+    categ: string;
+    adress: string;
+    description: string;
+    openHour: number;
+    closeHour: number;
+    priceDelivery: number;
+    tel: number;
 }

@@ -1,5 +1,3 @@
-export interface Account {
+export interface IStats {
     id: number;
-    email: string;
-    password: string;
 }

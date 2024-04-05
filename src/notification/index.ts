@@ -1,5 +1,7 @@
-export interface Account {
+export interface INotification {
     id: number;
-    email: string;
-    password: string;
+    IdUser: number;
+    titleNotif: string;
+    textNotif: string;
+    typeNotif: number;
 }

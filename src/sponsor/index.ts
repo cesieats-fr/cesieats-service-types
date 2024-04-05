@@ -1,5 +1,4 @@
-export interface Account {
-    id: number;
-    email: string;
-    password: string;
+export interface ISponsor {
+    idUser: number;
+    idSponsorised: number;
 }
