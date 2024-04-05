@@ -14,23 +14,6 @@ pipeline {
             }
         }
 
-        stage('Moved files from src to root') {
-            steps {
-                sh 'mv -f ./src/account ./'
-                sh 'mv -f ./src/delivery ./'
-                sh 'mv -f ./src/file ./'
-                sh 'mv -f ./src/identity ./'
-                sh 'mv -f ./src/index.ts ./'
-                sh 'mv -f ./src/item ./'
-                sh 'mv -f ./src/notification ./'
-                sh 'mv -f ./src/order ./'
-                sh 'mv -f ./src/qrcode ./'
-                sh 'mv -f ./src/restaurant ./'
-                sh 'mv -f ./src/sponsor ./'
-                sh 'mv -f ./src/stats ./'
-            }
-        }
-
         stage('Publish') {
             steps {
                 // Publish the npm package to the registry
