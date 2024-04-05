@@ -7,11 +7,10 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('Change version') {
             steps {
-                // Install dependencies and build the npm package
-                sh 'npm install'
-                sh 'npm run build'
+                // Update npm version package
+                sh 'npm version 1.0.$BUILD_ID'
             }
         }
 
