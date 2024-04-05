@@ -10,7 +10,7 @@ pipeline {
 
         stage('') {
             steps {
-                sh 'mv ./src* .'
+                sh 'mv ./src/* .'
             }
         }
 
