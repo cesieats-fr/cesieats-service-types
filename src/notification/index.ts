@@ -1,7 +1,11 @@
 export interface INotification {
-    id: number;
-    IdUser: number;
-    titleNotif: string;
-    textNotif: string;
-    typeNotif: number;
-}
+    title: string;
+    text: string;
+    typeNotif: ENotificationType;
+};
+
+export enum ENotificationType {
+    Info,
+    Warning,
+    Error,
+};

@@ -1,6 +1,7 @@
+import { ObjectId } from 'mongoose';
+
 export interface IAccount {
-    id: string;
     name: string;
     forname: string;
-    idIdentity: string;
+    idIdentity: ObjectId;
 };

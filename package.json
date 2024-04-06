@@ -9,6 +9,7 @@
   "author": "CesiEats",
   "license": "ISC",
   "dependencies": {
+    "@types/mongoose": "^5.11.97",
     "typescript": "^5.4.3"
   }
 }

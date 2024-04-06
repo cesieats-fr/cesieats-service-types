@@ -1,4 +1,6 @@
+import { ObjectId } from "mongoose";
+
 export interface ISponsor {
-    idSponsor: number;
-    idSponsorised: number;
+    idSponsor: ObjectId;
+    idSponsored: ObjectId;
 }
