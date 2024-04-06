@@ -1,4 +1,4 @@
 export interface ISponsor {
-    idUser: number;
+    idSponsor: number;
     idSponsorised: number;
 }
