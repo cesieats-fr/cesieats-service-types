@@ -1,15 +1,18 @@
 export interface IItem {
-    id: number;
     title: string;
+    description: string;
+    imageUrl: string;
+    price: Number;
 }
 
 export interface IMenu {
-    id: string;
     title: string;
+    description: string;
+    imageUrl: string;
+    price: Number;
 }
 
 export interface IMenuItem {
-    id: string;
     idItem: string;
     idMenu: string;
 }
