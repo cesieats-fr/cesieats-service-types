@@ -1,5 +1,4 @@
 export interface IDelivery {
-    id: string;
     state: DeliveryState;
     idClient: string;
     idDeliver: string;
