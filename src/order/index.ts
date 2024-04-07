@@ -5,6 +5,7 @@ export interface IOrder {
     idClient: ObjectId;
     idDelivery?: ObjectId;
     orderState: OrderState;
+    price: number;
 };
 
 export interface IOrderItems {
