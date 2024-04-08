@@ -6,6 +6,7 @@ export interface IOrder {
     idDelivery?: ObjectId;
     orderState: OrderState;
     price: number;
+    deliveryEaring: number;
 };
 
 export interface IOrderItems {
