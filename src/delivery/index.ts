@@ -1,11 +1,9 @@
-import { ObjectId } from "mongoose";
-
 export interface IDelivery {
     state: EDeliveryState;
-    idClient: ObjectId;
-    idDeliver: ObjectId;
-    idOrder: ObjectId;
-    idRestaurant: ObjectId;
+    idClient: string;
+    idDeliver: string;
+    idOrder: string;
+    idRestaurant: string;
     clientAddress: string;
     restaurantName: string;
     restaurantAddress: string;

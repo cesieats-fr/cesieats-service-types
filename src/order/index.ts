@@ -1,9 +1,7 @@
-import { ObjectId } from 'mongoose';
-
 export interface IOrder {
     idRestaurant: string;
-    idClient: ObjectId;
-    idDelivery?: ObjectId;
+    idClient: string;
+    idDelivery?: string;
     orderState: OrderState;
     price: number;
     clientName: string;
@@ -14,13 +12,13 @@ export interface IOrder {
 };
 
 export interface IOrderItems {
-    idOrder: ObjectId;
-    idItem: ObjectId;
+    idOrder: string;
+    idItem: string;
 };
 
 export interface IOrderMenus {
-    idOrder: ObjectId;
-    idMenu: ObjectId;
+    idOrder: string;
+    idMenu: string;
 }
 
 export enum OrderState {

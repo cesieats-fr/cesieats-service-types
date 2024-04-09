@@ -1,11 +1,9 @@
-import { ObjectId } from 'mongoose';
-
 export interface IItem {
     title: string;
     description?: string;
     imageUrl?: string;
     price: Number;
-    idRestaurant: ObjectId;
+    idRestaurant: string;
 };
 
 export interface IMenu {
@@ -13,10 +11,10 @@ export interface IMenu {
     description?: string;
     imageUrl?: string;
     price: Number;
-    idRestaurant: ObjectId;
+    idRestaurant: string;
 };
 
 export interface IMenuItem {
-    idItem: ObjectId;
-    idMenu: ObjectId;
+    idItem: string;
+    idMenu: string;
 };
