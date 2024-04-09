@@ -12,7 +12,7 @@ export interface IDelivery {
     restaurantTelephone: string;
 }
 
-enum EDeliveryState {
+export enum EDeliveryState {
     Waiting,
     GoingToRestaurant,
     Delivering,
