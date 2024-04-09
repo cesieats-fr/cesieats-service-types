@@ -1,5 +1,6 @@
 export interface IOrder {
     idRestaurant: string;
+    idAccountRestaurant: string;
     idClient: string;
     idDelivery?: string;
     orderState: OrderState;
