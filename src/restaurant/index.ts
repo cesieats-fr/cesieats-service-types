@@ -2,8 +2,9 @@ export interface IRestaurant {
     name: string;
     description: string;
     address: string;
-    openingTime: number;
-    closingTime: number;
+    openingTime: string;
+    closingTime: string;
     deliveryPrice: number;
-    telephone: number;
+    telephone: string;
+    idClient: string;
 }
