@@ -1,22 +1,22 @@
-import { ObjectId } from 'mongoose';
+    import { ObjectId } from 'mongoose';
 
-export interface IOrder {
-    idRestaurant: string;
-    idClient: ObjectId;
-    idDelivery?: ObjectId;
-    orderState: OrderState;
-    price: number;
-    deliveryEarning: number;
-};
+    export interface IOrder {
+        idRestaurant: string;
+        idClient: ObjectId;
+        idDelivery?: ObjectId;
+        orderState: OrderState;
+        price: number;
+        deliveryEarning: number;
+    };
 
-export interface IOrderItems {
-    idOrder: string;
-    idItem: string;
-};
+    export interface IOrderItems {
+        idOrder: string;
+        idItem: string;
+    };
 
-export enum OrderState {
-    WaitingForApproval,
-    Approved,
-    WaitingForDelivery,
-    Delivered,
-};
+    export enum OrderState {
+        WaitingForApproval,
+        Approved,
+        WaitingForDelivery,
+        Delivered,
+    };
