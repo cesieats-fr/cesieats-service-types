@@ -1,16 +1,18 @@
-import { ObjectId } from 'mongoose';
+import { ObjectId } from "mongoose";
 
 export interface IDelivery {
-    state: DeliveryState;
+    state: EDeliveryState;
     idClient: ObjectId;
-    idRestaurant: ObjectId;
     idDeliver: ObjectId;
     idOrder: ObjectId;
-};
-
-export enum DeliveryState {
+    clientAddress: string;
+    restaurantName: string;
+    restaurantAddress: string;
+    restaurantTelephone: string;
+}
+enum EDeliveryState {
     Waiting,
     GoingToRestaurant,
     Delivering,
     Delivered
-};
+}
