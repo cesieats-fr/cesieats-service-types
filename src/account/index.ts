@@ -6,6 +6,7 @@ export interface IAccount {
     accountType: EAccountType;
     address?: string;
     apiKey?: string;
+    codeSponsor?: string;
 };
 
 export enum EAccountType {
