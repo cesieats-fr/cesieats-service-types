@@ -1,4 +1,6 @@
-export interface IDelivery {
+import { Document } from 'mongoose';
+
+export interface IDelivery extends Document {
     state: EDeliveryState;
     idClient: string;
     idDeliver: string;
