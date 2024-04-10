@@ -3,7 +3,7 @@ export interface IItem {
     title: string;
     description?: string;
     imageUrl?: string;
-    price: Number;
+    price: number;
     idRestaurant: string;
 };
 
@@ -12,7 +12,7 @@ export interface IMenu {
     title: string;
     description?: string;
     imageUrl?: string;
-    price: Number;
+    price: number;
     idRestaurant: string;
 };
 
