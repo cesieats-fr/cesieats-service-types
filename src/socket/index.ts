@@ -1,10 +1,10 @@
 export interface ISocketAccountId {
-    userId: string;
+    accountId: string;
     socketId: string;
 }
 
 export interface ISocketEvent {
-    userId: string;
+    accountId: string;
     event: string;
     data: unknown;
 }
