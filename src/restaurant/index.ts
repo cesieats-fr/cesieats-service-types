@@ -1,6 +1,5 @@
-import { Document } from 'mongoose';
-
-export interface IRestaurant extends Document {
+export interface IRestaurant {
+    _id?: string;
     name: string;
     description: string;
     address: string;

@@ -1,6 +1,5 @@
-import { Document } from 'mongoose';
-
-export interface ISponsor extends Document {
+export interface ISponsor {
+    _id: string;
     idSponsor: string;
     idSponsored: string;
 }

@@ -1,6 +1,5 @@
-import { Document } from 'mongoose';
-
-export interface IAccount extends Document {
+export interface IAccount {
+    _id?: string;
     email: string;
     password: string;
     name: string;

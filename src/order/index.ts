@@ -1,6 +1,5 @@
-import { Document } from 'mongoose';
-
-export interface IOrder extends Document {
+export interface IOrder {
+    _id?: string;
     idRestaurant: string;
     idAccountRestaurant: string;
     idClient: string;
@@ -14,12 +13,14 @@ export interface IOrder extends Document {
     restaurantTelephone: string;
 };
 
-export interface IOrderItems extends Document {
+export interface IOrderItems {
+    _id?: string;
     idOrder: string;
     idItem: string;
 };
 
-export interface IOrderMenus extends Document {
+export interface IOrderMenus {
+    _id?: string;
     idOrder: string;
     idMenu: string;
 }

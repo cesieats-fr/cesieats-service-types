@@ -1,6 +1,5 @@
-import { Document } from 'mongoose';
-
-export interface IItem extends Document {
+export interface IItem {
+    _id?: string;
     title: string;
     description?: string;
     imageUrl?: string;
@@ -8,7 +7,8 @@ export interface IItem extends Document {
     idRestaurant: string;
 };
 
-export interface IMenu extends Document{
+export interface IMenu {
+    _id?: string;
     title: string;
     description?: string;
     imageUrl?: string;
@@ -16,7 +16,8 @@ export interface IMenu extends Document{
     idRestaurant: string;
 };
 
-export interface IMenuItem extends Document{
+export interface IMenuItem {
+    _id?: string;
     idItem: string;
     idMenu: string;
 };

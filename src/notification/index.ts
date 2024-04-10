@@ -1,6 +1,5 @@
-import { Document } from 'mongoose';
-
-export interface INotification extends Document {
+export interface INotification {
+    _id?: string;
     title: string;
     text: string;
     typeNotif: ENotificationType;
