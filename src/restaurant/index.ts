@@ -6,5 +6,5 @@ export interface IRestaurant {
     closingTime: string;
     deliveryPrice: number;
     telephone: string;
-    idClient?: string;
+    idAccount?: string;
 }
