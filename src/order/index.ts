@@ -17,12 +17,14 @@ export interface IOrderItems {
     _id?: string;
     idOrder: string;
     idItem: string;
+    amount: string;
 };
 
 export interface IOrderMenus {
     _id?: string;
     idOrder: string;
     idMenu: string;
+    amount: string;
 }
 
 export enum EOrderState {
