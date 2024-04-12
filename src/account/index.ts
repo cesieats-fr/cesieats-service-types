@@ -13,5 +13,6 @@ export interface IAccount {
 export enum EAccountType {
     CLIENT,
     DELIVER,
-    RESTAURANT,
+    RESTAURANT, 
+    SALESDEPARTEMENT,   
 }
