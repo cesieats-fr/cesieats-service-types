@@ -2,7 +2,7 @@ export interface IDelivery {
     _id?: string;
     state: EDeliveryState;
     idClient: string;
-    idDeliver: string;
+    idDeliver?: string;
     idOrder: string;
     idRestaurant: string;
     clientAddress: string;
