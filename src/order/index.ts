@@ -17,14 +17,14 @@ export interface IOrderItems {
     _id?: string;
     idOrder: string;
     idItem: string;
-    amount: string;
+    amount: number;
 };
 
 export interface IOrderMenus {
     _id?: string;
     idOrder: string;
     idMenu: string;
-    amount: string;
+    amount: number;
 }
 
 export enum EOrderState {
