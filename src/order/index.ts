@@ -4,7 +4,7 @@ export interface IOrder {
     idAccountRestaurant: string;
     idClient: string;
     idDelivery?: string;
-    orderState: OrderState;
+    orderState: EOrderState;
     price: number;
     clientName: string;
     clientAddress: string;
@@ -25,7 +25,7 @@ export interface IOrderMenus {
     idMenu: string;
 }
 
-export enum OrderState {
+export enum EOrderState {
     WaitingForApproval,
     Approved,
     WaitingForDelivery,

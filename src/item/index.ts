@@ -4,7 +4,7 @@ export interface IItem {
     description?: string;
     imageUrl?: string;
     price: number;
-    idRestaurant: string;
+    idRestaurant?: string;
 };
 
 export interface IMenu {
@@ -13,7 +13,7 @@ export interface IMenu {
     description?: string;
     imageUrl?: string;
     price: number;
-    idRestaurant: string;
+    idRestaurant?: string;
 };
 
 export interface IMenuItem {
